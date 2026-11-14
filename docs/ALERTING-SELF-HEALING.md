@@ -126,6 +126,7 @@ Deixe 3 terminais abertos:
 kubectl -n toggle-master get pods -l app=auth-service -w
 
 # T2 — tráfego contínuo em /validate (mostra 200 → 500 → 200)
+# Abre um port-forward local do ingress; transporte ate o cluster via kubectl.
 ./scripts/demo/load-validate.sh
 
 # T3 — logs do self-healing
@@ -182,3 +183,5 @@ nativos para PagerDuty, Discord e webhook. O Grafana continua mostrando o estado
 **Self-healing dentro do cluster** em vez de Lambda/GitHub Action: no AWS Academy não há IRSA e as credenciais
 expiram a cada sessão; um receiver no próprio cluster não precisa de credencial AWS, não expõe nada na internet e
 usa RBAC mínimo (só `patch` nos 5 Deployments).
+
+O gerador usa a porta local 18080 por padrao e encerra apenas o port-forward que ele iniciou. Use LOCAL_PORT para trocar a porta, RATE_PER_SECOND para a taxa e DURATION_SECONDS para a duracao. BASE_URL e opcional e aceita HTTPS ou HTTP em loopback. A chave da aplicacao vai pelo stdin do curl, sem aparecer nos argumentos do processo.
