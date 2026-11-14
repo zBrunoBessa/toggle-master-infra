@@ -172,8 +172,8 @@
       },
       "targets": [
         {
-          "expr": "sum(rate(nginx_ingress_controller_requests{exported_namespace=\"toggle-master\"}[5m])) by (service)",
-          "legendFormat": "{{service}}",
+          "expr": "sum(rate(nginx_ingress_controller_requests{exported_namespace=\"toggle-master\"}[5m])) by (exported_service)",
+          "legendFormat": "{{exported_service}}",
           "refId": "A"
         }
       ],
