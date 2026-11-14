@@ -55,11 +55,12 @@ As 14 Applications do Argo CD atingiram Synced/Healthy. As imagens usam tags do 
 5. Alertmanager enviou o alerta ao Discord, PagerDuty e webhook de self-healing.
 6. Às 17:13:40 o receptor executou o patch de rollout restart, aceito pelo Kubernetes.
 7. Duas novas réplicas ficaram Ready e o tráfego voltou a HTTP 200, sem intervenção manual para remover a falha.
-8. Às 17:17 UTC, o Prometheus já não apresentava alertas ToggleMaster ativos; a entrega das mensagens de resolução segue o group_interval de 5 minutos.
+8. O alerta terminou às 17:16:10. O Discord exibiu RESOLVED às 17:18, após o intervalo de agrupamento de cinco minutos.
 
 O self-healing restringe os deployments permitidos e aplica cooldown de 300 segundos. A confirmação do patch foi complementada pela observação dos novos UIDs dos pods e pela recuperação HTTP, evitando confundir um patch aceito com recuperação concluída.
 
 - Alerta real no Discord: https://discord.com/channels/1571192526227111977/1571192669772849322/1571211532488933419
+- Resolução no Discord: https://discord.com/channels/1571192526227111977/1571192669772849322/1571212789660520520
 - Notificação do self-healing: https://discord.com/channels/1571192526227111977/1571192669772849322/1571211532732203109
 - PagerDuty: contador de envio incrementado, contador de falhas igual a zero. A sessão web expirou durante o teste; a confirmação visual do incidente real aguarda novo login.
 - Teste isolado anterior do PagerDuty, com Triggered e Resolved confirmados na interface: https://fiaptech.pagerduty.com/incidents/Q2RMLBOMF4X8QA. Este não deve ser confundido com o incidente real do teste de falha.
@@ -75,7 +76,7 @@ O self-healing restringe os deployments permitidos e aplica cooldown de 300 segu
 
 - Abrir Grafana e Argo CD no navegador por túneis locais autenticados; a validação por API já ocorreu, mas as capturas desses painéis ainda precisam ser feitas.
 - Entrar novamente no PagerDuty e registrar o incidente real e sua resolução.
-- Conferir a mensagem de resolução no Discord e no PagerDuty; o Prometheus já encerrou o alerta.
+- Conferir na interface do PagerDuty a resolução do incidente real; Prometheus e Discord já confirmaram a resolução.
 - Gravar vídeo de até 25 minutos mostrando CI/CD, EKS/Argo, dashboard, métricas/logs, mapa/trace e o ciclo de falha/recuperação.
 - Finalizar o PDF com nomes, RMs, usuários GitHub, links dos repositórios e do vídeo, arquitetura, justificativas e evidências. Nomes/RMs e vídeo ainda não foram fornecidos neste checkpoint.
 - O Promtail ainda está instalado; os logs OTel já foram validados. Avaliar sua retirada para evitar coleta duplicada antes da gravação definitiva.

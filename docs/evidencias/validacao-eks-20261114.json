@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-14T17:17:43.846265+00:00",
+  "checked_at": "2026-11-14T17:19:07.809321+00:00",
   "account": "891376974889",
   "cluster": "toggle-master-dev-eks",
   "applications": [
@@ -1671,6 +1671,150 @@
           "deleting": false
         }
       ]
+    },
+    {
+      "time": "2026-11-14T17:17:45.293864+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:17:55.955473+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:18:06.636979+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:18:17.269746+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:18:27.943772+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:18:38.587876+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:18:49.250066+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:18:59.951536+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
     }
   ],
   "load_samples": [
@@ -2078,7 +2222,35 @@
     "17:17:40  200=5 ",
     "17:17:41  200=5 ",
     "17:17:42  200=5 ",
-    "17:17:43  200=5 "
+    "17:17:43  200=5 ",
+    "17:17:44  200=5 ",
+    "17:17:45  200=5 ",
+    "17:17:47  200=5 ",
+    "17:17:48  200=5 ",
+    "17:17:49  200=5 ",
+    "17:17:50  200=5 ",
+    "17:17:51  200=5 ",
+    "17:17:52  200=5 ",
+    "17:17:53  200=5 ",
+    "17:17:54  200=5 ",
+    "17:17:55  200=5 ",
+    "17:17:56  200=5 ",
+    "17:17:57  200=5 ",
+    "17:17:59  200=5 ",
+    "17:18:00  200=5 ",
+    "17:18:01  200=5 ",
+    "17:18:02  200=5 ",
+    "17:18:03  200=5 ",
+    "17:18:04  200=5 ",
+    "17:18:05  200=5 ",
+    "17:18:06  200=5 ",
+    "17:18:08  200=5 ",
+    "17:18:09  200=5 ",
+    "17:18:10  200=5 ",
+    "17:18:11  200=5 ",
+    "17:18:12  200=5 ",
+    "17:18:13  200=5 ",
+    "17:18:14  200=3 "
   ],
   "self_healing_events": [
     {
@@ -2116,8 +2288,8 @@
           "integration": "discord"
         },
         "value": [
-          1794676522.957,
-          "1"
+          1794676747.825,
+          "2"
         ]
       },
       {
@@ -2125,8 +2297,8 @@
           "integration": "pagerduty"
         },
         "value": [
-          1794676522.957,
-          "1"
+          1794676747.825,
+          "2"
         ]
       },
       {
@@ -2134,8 +2306,8 @@
           "integration": "webhook"
         },
         "value": [
-          1794676522.957,
-          "1"
+          1794676747.825,
+          "2"
         ]
       }
     ],
@@ -2145,7 +2317,7 @@
           "integration": "discord"
         },
         "value": [
-          1794676522.967,
+          1794676747.839,
           "0"
         ]
       },
@@ -2154,7 +2326,7 @@
           "integration": "pagerduty"
         },
         "value": [
-          1794676522.967,
+          1794676747.839,
           "0"
         ]
       },
@@ -2163,11 +2335,12 @@
           "integration": "webhook"
         },
         "value": [
-          1794676522.967,
+          1794676747.839,
           "0"
         ]
       }
     ]
   },
-  "final_project_alerts": []
+  "final_project_alerts": [],
+  "discord_resolved_url": "https://discord.com/channels/1571192526227111977/1571192669772849322/1571212789660520520"
 }
