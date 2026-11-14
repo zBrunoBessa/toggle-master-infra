@@ -19,7 +19,7 @@ on:
         description: 'Repositório de manifestos a atualizar.'
         required: false
         type: string
-        default: FIAP-Teach-Challenge-2/toggle-master-infra
+        default: zBrunoBessa/toggle-master-infra
       gitops_ref:
         description: 'Branch a atualizar.'
         required: false

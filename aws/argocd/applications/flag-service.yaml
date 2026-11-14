@@ -8,8 +8,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/FIAP-Teach-Challenge-2/toggle-master-infra.git
-    targetRevision: main
+    repoURL: https://github.com/zBrunoBessa/toggle-master-infra.git
+    targetRevision: deploy/bruno-891376974889
     path: aws/apps/flag-service
   destination:
     server: https://kubernetes.default.svc
