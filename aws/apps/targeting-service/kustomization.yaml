@@ -8,5 +8,5 @@ resources:
 
 images:
 - name: targeting-service
-  newName: 965145516306.dkr.ecr.us-east-1.amazonaws.com/togglemaster/targeting-service
-  newTag: 343d38e58b76133b5af099d900ac3a60c9923310
+  newName: 891376974889.dkr.ecr.us-east-1.amazonaws.com/togglemaster/targeting-service
+  newTag: 57b316c48057e000a6456bf022fa948667133df8
