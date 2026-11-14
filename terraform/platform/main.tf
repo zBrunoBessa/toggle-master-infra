@@ -182,6 +182,10 @@ resource "helm_release" "ingress_nginx" {
   values = [
     yamlencode({
       controller = {
+        # O lab usa ingress sem dominio; mantenha metricas por ingress/servico.
+        extraArgs = {
+          "metrics-per-host" = "false"
+        }
         service = {
           type = "LoadBalancer"
           annotations = {
