@@ -1,0 +1,2173 @@
+{
+  "checked_at": "2026-11-14T17:17:43.846265+00:00",
+  "account": "891376974889",
+  "cluster": "toggle-master-dev-eks",
+  "applications": [
+    {
+      "name": "analytics-service",
+      "sync": "Synced",
+      "health": "Healthy"
+    },
+    {
+      "name": "auth-service",
+      "sync": "Synced",
+      "health": "Healthy"
+    },
+    {
+      "name": "evaluation-service",
+      "sync": "Synced",
+      "health": "Healthy"
+    },
+    {
+      "name": "flag-service",
+      "sync": "Synced",
+      "health": "Healthy"
+    },
+    {
+      "name": "kube-prometheus-stack",
+      "sync": "Synced",
+      "health": "Healthy"
+    },
+    {
+      "name": "loki",
+      "sync": "Synced",
+      "health": "Healthy"
+    },
+    {
+      "name": "monitoring-alerting",
+      "sync": "Synced",
+      "health": "Healthy"
+    },
+    {
+      "name": "monitoring-dashboards",
+      "sync": "Synced",
+      "health": "Healthy"
+    },
+    {
+      "name": "otel-collector",
+      "sync": "Synced",
+      "health": "Healthy"
+    },
+    {
+      "name": "promtail",
+      "sync": "Synced",
+      "health": "Healthy"
+    },
+    {
+      "name": "self-healing",
+      "sync": "Synced",
+      "health": "Healthy"
+    },
+    {
+      "name": "targeting-service",
+      "sync": "Synced",
+      "health": "Healthy"
+    },
+    {
+      "name": "toggle-master-platform",
+      "sync": "Synced",
+      "health": "Healthy"
+    },
+    {
+      "name": "toggle-master-root",
+      "sync": "Synced",
+      "health": "Healthy"
+    }
+  ],
+  "dashboard_queries": [
+    {
+      "id": 1,
+      "title": "CPU dos nós",
+      "status": "success",
+      "series": 2
+    },
+    {
+      "id": 2,
+      "title": "Memória dos nós",
+      "status": "success",
+      "series": 2
+    },
+    {
+      "id": 3,
+      "title": "CPU pods (toggle-master)",
+      "status": "success",
+      "series": 5
+    },
+    {
+      "id": 4,
+      "title": "Memória pods (toggle-master)",
+      "status": "success",
+      "series": 5
+    },
+    {
+      "id": 5,
+      "title": "Request rate por serviço",
+      "status": "success",
+      "series": 1
+    },
+    {
+      "id": 6,
+      "title": "Taxa HTTP 5xx (ingress)",
+      "status": "success",
+      "series": 1
+    },
+    {
+      "id": 7,
+      "title": "Request rate por path",
+      "status": "success",
+      "series": 1
+    },
+    {
+      "id": 9,
+      "title": "Request rate por serviço (OTel)",
+      "status": "success",
+      "series": 5
+    },
+    {
+      "id": 10,
+      "title": "Taxa de erro por serviço (OTel)",
+      "status": "success",
+      "series": 5
+    },
+    {
+      "id": 11,
+      "title": "Latência p95 por serviço (OTel)",
+      "status": "success",
+      "series": 5
+    },
+    {
+      "id": 8,
+      "title": "Logs em tempo real (namespace toggle-master, via OTel Collector)",
+      "status": "success",
+      "series": 5
+    }
+  ],
+  "chaos_observations": [
+    {
+      "time": "2026-11-14T17:11:08.927554+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:11:19.605592+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:11:30.417402+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:11:41.103265+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:11:51.788002+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:12:02.499631+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:12:13.338725+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 50.19% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "5.019258243970213e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 50.19% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "5.019258243970213e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:12:24.025984+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 50.19% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "5.019258243970213e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 50.19% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "5.019258243970213e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:12:34.697379+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 50.19% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "5.019258243970213e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 50.19% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "5.019258243970213e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:12:45.340959+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 69.6% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "6.960183431216951e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 69.6% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "6.960183431216951e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:12:56.020096+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 69.6% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "6.960183431216951e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 69.6% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "6.960183431216951e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:13:06.703927+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 69.6% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "6.960183431216951e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 69.6% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "6.960183431216951e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:13:17.432148+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:13:28.110500+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:13:38.894891+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:13:49.606767+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-6686d54cbd-wf9hk",
+          "uid": "8ea54a95-fc45-40c3-bdb8-21ce38cab821",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": false,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:14:00.303705+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-6686d54cbd-w6fjc",
+          "uid": "7274cd63-d909-47dc-acc1-73ab1e063b73",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": false,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:14:10.976304+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:14:21.649973+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:14:32.331360+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 100% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "1e+00"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:14:43.153440+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 91.67% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "9.166666666666667e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 91.67% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "9.166666666666667e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:14:53.878643+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 91.67% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "9.166666666666667e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 91.67% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "9.166666666666667e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:15:04.543407+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 91.67% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "9.166666666666667e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 91.67% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "9.166666666666667e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:15:15.222034+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 57.36% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "5.736040609137055e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 57.36% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "5.736040609137055e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:15:25.860478+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 57.36% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "5.736040609137055e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 57.36% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "5.736040609137055e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:15:36.540744+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 57.36% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "5.736040609137055e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 57.36% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "5.736040609137055e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:15:47.200340+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 22.59% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "2.2588832487309646e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 22.59% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "2.2588832487309646e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:15:57.888894+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 22.59% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "2.2588832487309646e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 22.59% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "2.2588832487309646e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:16:08.592701+00:00",
+      "alerts": [
+        {
+          "labels": {
+            "alertname": "ToggleMasterHigh5xxRate",
+            "deployment": "auth-service",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "self_heal": "true",
+            "severity": "critical",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Mais de 5% das requisições ao auth-service (via ingress) retornaram 5xx nos últimos 2 minutos, sustentado por 1 minuto. O self-healing vai executar rollout restart do deployment.",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemasterhigh5xxrate",
+            "summary": "auth-service com 22.59% de respostas HTTP 5xx"
+          },
+          "state": "firing",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "2.2588832487309646e-01"
+        },
+        {
+          "labels": {
+            "alertname": "ToggleMaster5xxRateWarning",
+            "exported_namespace": "toggle-master",
+            "exported_service": "auth-service",
+            "severity": "warning",
+            "team": "toggle-master"
+          },
+          "annotations": {
+            "description": "Taxa de 5xx do auth-service acima de 1% por 5 minutos. Só notifica o Discord (sem página e sem self-healing).",
+            "runbook_url": "https://github.com/zBrunoBessa/toggle-master-infra/blob/deploy/bruno-891376974889/docs/ALERTING-SELF-HEALING.md#runbook-togglemaster5xxratewarning",
+            "summary": "auth-service com 22.59% de respostas HTTP 5xx"
+          },
+          "state": "pending",
+          "activeAt": "2026-11-14T17:12:10.691243885Z",
+          "value": "2.2588832487309646e-01"
+        }
+      ],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:16:19.253696+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:16:30.084256+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:16:40.754724+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:16:51.552845+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:17:02.272341+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:17:13.066612+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:17:23.880564+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    },
+    {
+      "time": "2026-11-14T17:17:34.589041+00:00",
+      "alerts": [],
+      "pods": [
+        {
+          "name": "auth-service-7bcbf8b6f4-ksjq7",
+          "uid": "200a8f9f-80d5-45b1-9cb8-80ab939bc02f",
+          "ready": true,
+          "deleting": false
+        },
+        {
+          "name": "auth-service-7bcbf8b6f4-sswxk",
+          "uid": "6895bfd0-d929-45ed-8502-315b4d4739b3",
+          "ready": true,
+          "deleting": false
+        }
+      ]
+    }
+  ],
+  "load_samples": [
+    "Gerando ~5 req/s em http://127.0.0.1:18080/validate por 480s.",
+    "17:10:15  200=5 ",
+    "17:10:16  200=5 ",
+    "17:10:17  200=5 ",
+    "17:10:18  200=5 ",
+    "17:10:19  200=5 ",
+    "17:10:20  200=5 ",
+    "17:10:22  200=5 ",
+    "17:10:23  200=5 ",
+    "17:10:24  200=5 ",
+    "17:10:25  200=5 ",
+    "17:10:26  200=5 ",
+    "17:10:27  200=5 ",
+    "17:10:28  200=5 ",
+    "17:10:29  200=5 ",
+    "17:10:30  200=5 ",
+    "17:10:32  200=5 ",
+    "17:10:33  200=5 ",
+    "17:10:34  200=5 ",
+    "17:10:35  200=5 ",
+    "17:10:36  200=5 ",
+    "17:10:37  200=5 ",
+    "17:10:38  200=5 ",
+    "17:10:39  200=5 ",
+    "17:10:40  200=5 ",
+    "17:10:41  200=5 ",
+    "17:10:42  200=5 ",
+    "17:10:44  200=5 ",
+    "17:10:45  200=5 ",
+    "17:10:46  200=5 ",
+    "17:10:47  200=5 ",
+    "17:10:48  200=5 ",
+    "17:10:49  200=5 ",
+    "17:10:50  200=5 ",
+    "17:10:51  200=5 ",
+    "17:10:52  200=5 ",
+    "17:10:54  200=5 ",
+    "17:10:55  200=5 ",
+    "17:10:56  200=5 ",
+    "17:10:57  200=5 ",
+    "17:10:58  200=5 ",
+    "17:10:59  200=5 ",
+    "17:11:00  200=5 ",
+    "17:11:01  200=5 ",
+    "17:11:02  200=5 ",
+    "17:11:03  200=5 ",
+    "17:11:05  200=5 ",
+    "17:11:06  200=5 ",
+    "17:11:07  200=5 ",
+    "17:11:08  200=5 ",
+    "17:11:09  200=5 ",
+    "17:11:11  200=4 500=1 ",
+    "17:11:12  500=5 ",
+    "17:11:13  500=5 ",
+    "17:11:14  500=5 ",
+    "17:11:15  500=5 ",
+    "17:11:16  500=5 ",
+    "17:11:17  500=5 ",
+    "17:11:18  500=5 ",
+    "17:11:19  500=5 ",
+    "17:11:20  500=5 ",
+    "17:11:22  500=5 ",
+    "17:11:23  500=5 ",
+    "17:11:24  500=5 ",
+    "17:11:25  500=5 ",
+    "17:11:26  500=5 ",
+    "17:11:27  500=5 ",
+    "17:11:28  500=5 ",
+    "17:11:29  500=5 ",
+    "17:11:31  500=5 ",
+    "17:11:32  500=5 ",
+    "17:11:33  500=5 ",
+    "17:11:34  500=5 ",
+    "17:11:35  500=5 ",
+    "17:11:36  500=5 ",
+    "17:11:37  500=5 ",
+    "17:11:38  500=5 ",
+    "17:11:39  500=5 ",
+    "17:11:40  500=5 ",
+    "17:11:42  500=5 ",
+    "17:11:43  500=5 ",
+    "17:11:44  500=5 ",
+    "17:11:45  500=5 ",
+    "17:11:46  500=5 ",
+    "17:11:47  500=5 ",
+    "17:11:48  500=5 ",
+    "17:11:49  500=5 ",
+    "17:11:50  500=5 ",
+    "17:11:51  500=5 ",
+    "17:11:52  500=5 ",
+    "17:11:54  500=5 ",
+    "17:11:55  500=5 ",
+    "17:11:56  500=5 ",
+    "17:11:57  500=5 ",
+    "17:11:58  500=5 ",
+    "17:11:59  500=5 ",
+    "17:12:00  500=5 ",
+    "17:12:01  500=5 ",
+    "17:12:02  500=5 ",
+    "17:12:03  500=5 ",
+    "17:12:05  500=5 ",
+    "17:12:06  500=5 ",
+    "17:12:07  500=5 ",
+    "17:12:08  500=5 ",
+    "17:12:09  500=5 ",
+    "17:12:10  500=5 ",
+    "17:12:11  500=5 ",
+    "17:12:12  500=5 ",
+    "17:12:13  500=5 ",
+    "17:12:14  500=5 ",
+    "17:12:16  500=5 ",
+    "17:12:17  500=5 ",
+    "17:12:18  500=5 ",
+    "17:12:19  500=5 ",
+    "17:12:20  500=5 ",
+    "17:12:21  500=5 ",
+    "17:12:22  500=5 ",
+    "17:12:23  500=5 ",
+    "17:12:24  500=5 ",
+    "17:12:25  500=5 ",
+    "17:12:26  500=5 ",
+    "17:12:28  500=5 ",
+    "17:12:29  500=5 ",
+    "17:12:30  500=5 ",
+    "17:12:31  500=5 ",
+    "17:12:32  500=5 ",
+    "17:12:33  500=5 ",
+    "17:12:34  500=5 ",
+    "17:12:35  500=5 ",
+    "17:12:36  500=5 ",
+    "17:12:37  500=5 ",
+    "17:12:39  500=5 ",
+    "17:12:40  500=5 ",
+    "17:12:41  500=5 ",
+    "17:12:42  500=5 ",
+    "17:12:43  500=5 ",
+    "17:12:44  500=5 ",
+    "17:12:45  500=5 ",
+    "17:12:46  500=5 ",
+    "17:12:47  500=5 ",
+    "17:12:48  500=5 ",
+    "17:12:50  500=5 ",
+    "17:12:51  500=5 ",
+    "17:12:52  500=5 ",
+    "17:12:53  500=5 ",
+    "17:12:54  500=5 ",
+    "17:12:55  500=5 ",
+    "17:12:56  500=5 ",
+    "17:12:57  500=5 ",
+    "17:12:58  500=5 ",
+    "17:12:59  500=5 ",
+    "17:13:00  500=5 ",
+    "17:13:02  500=5 ",
+    "17:13:03  500=5 ",
+    "17:13:04  500=5 ",
+    "17:13:05  500=5 ",
+    "17:13:06  500=5 ",
+    "17:13:07  500=5 ",
+    "17:13:08  500=5 ",
+    "17:13:09  500=5 ",
+    "17:13:10  500=5 ",
+    "17:13:11  500=5 ",
+    "17:13:12  500=5 ",
+    "17:13:14  500=5 ",
+    "17:13:15  500=5 ",
+    "17:13:16  500=5 ",
+    "17:13:17  500=5 ",
+    "17:13:18  500=5 ",
+    "17:13:19  500=5 ",
+    "17:13:20  500=5 ",
+    "17:13:21  500=5 ",
+    "17:13:22  500=5 ",
+    "17:13:23  500=5 ",
+    "17:13:24  500=5 ",
+    "17:13:26  500=5 ",
+    "17:13:27  500=5 ",
+    "17:13:28  500=5 ",
+    "17:13:29  500=5 ",
+    "17:13:30  500=5 ",
+    "17:13:31  500=5 ",
+    "17:13:32  500=5 ",
+    "17:13:33  500=5 ",
+    "17:13:34  500=5 ",
+    "17:13:35  500=5 ",
+    "17:13:36  500=5 ",
+    "17:13:38  500=5 ",
+    "17:13:39  500=5 ",
+    "17:13:40  500=5 ",
+    "17:13:41  500=5 ",
+    "17:13:42  500=5 ",
+    "17:13:43  500=5 ",
+    "17:13:44  500=5 ",
+    "17:13:45  500=5 ",
+    "17:13:46  500=5 ",
+    "17:13:47  500=5 ",
+    "17:13:49  500=5 ",
+    "17:13:50  500=5 ",
+    "17:13:51  500=5 ",
+    "17:13:52  500=5 ",
+    "17:13:53  500=5 ",
+    "17:13:54  500=5 ",
+    "17:13:55  200=2 500=3 ",
+    "17:13:56  200=2 500=3 ",
+    "17:13:57  200=3 500=2 ",
+    "17:13:59  200=3 500=2 ",
+    "17:14:00  200=3 500=2 ",
+    "17:14:01  200=2 500=3 ",
+    "17:14:02  200=3 500=2 ",
+    "17:14:03  200=2 500=3 ",
+    "17:14:04  200=3 500=2 ",
+    "17:14:05  200=3 500=2 ",
+    "17:14:06  200=2 500=3 ",
+    "17:14:10  000=1 200=4 ",
+    "17:14:12  200=5 ",
+    "17:14:13  200=5 ",
+    "17:14:14  200=5 ",
+    "17:14:15  200=5 ",
+    "17:14:16  200=5 ",
+    "17:14:17  200=5 ",
+    "17:14:18  200=5 ",
+    "17:14:19  200=5 ",
+    "17:14:20  200=5 ",
+    "17:14:22  200=5 ",
+    "17:14:23  200=5 ",
+    "17:14:24  200=5 ",
+    "17:14:25  200=5 ",
+    "17:14:26  200=5 ",
+    "17:14:27  200=5 ",
+    "17:14:28  200=5 ",
+    "17:14:29  200=5 ",
+    "17:14:30  200=5 ",
+    "17:14:31  200=5 ",
+    "17:14:33  200=5 ",
+    "17:14:34  200=5 ",
+    "17:14:35  200=5 ",
+    "17:14:36  200=5 ",
+    "17:14:37  200=5 ",
+    "17:14:38  200=5 ",
+    "17:14:39  200=5 ",
+    "17:14:40  200=5 ",
+    "17:14:41  200=5 ",
+    "17:14:43  200=5 ",
+    "17:14:44  200=5 ",
+    "17:14:45  200=5 ",
+    "17:14:46  200=5 ",
+    "17:14:47  200=5 ",
+    "17:14:48  200=5 ",
+    "17:14:49  200=5 ",
+    "17:14:50  200=5 ",
+    "17:14:51  200=5 ",
+    "17:14:52  200=5 ",
+    "17:14:54  200=5 ",
+    "17:14:55  200=5 ",
+    "17:14:56  200=5 ",
+    "17:14:57  200=5 ",
+    "17:14:58  200=5 ",
+    "17:14:59  200=5 ",
+    "17:15:00  200=5 ",
+    "17:15:01  200=5 ",
+    "17:15:02  200=5 ",
+    "17:15:03  200=5 ",
+    "17:15:05  200=5 ",
+    "17:15:06  200=5 ",
+    "17:15:07  200=5 ",
+    "17:15:08  200=5 ",
+    "17:15:09  200=5 ",
+    "17:15:10  200=5 ",
+    "17:15:11  200=5 ",
+    "17:15:12  200=5 ",
+    "17:15:13  200=5 ",
+    "17:15:14  200=5 ",
+    "17:15:16  200=5 ",
+    "17:15:17  200=5 ",
+    "17:15:18  200=5 ",
+    "17:15:19  200=5 ",
+    "17:15:20  200=5 ",
+    "17:15:21  200=5 ",
+    "17:15:22  200=5 ",
+    "17:15:23  200=5 ",
+    "17:15:24  200=5 ",
+    "17:15:25  200=5 ",
+    "17:15:26  200=5 ",
+    "17:15:28  200=5 ",
+    "17:15:29  200=5 ",
+    "17:15:30  200=5 ",
+    "17:15:31  200=5 ",
+    "17:15:32  200=5 ",
+    "17:15:33  200=5 ",
+    "17:15:34  200=5 ",
+    "17:15:35  200=5 ",
+    "17:15:36  200=5 ",
+    "17:15:37  200=5 ",
+    "17:15:39  200=5 ",
+    "17:15:40  200=5 ",
+    "17:15:41  200=5 ",
+    "17:15:42  200=5 ",
+    "17:15:43  200=5 ",
+    "17:15:44  200=5 ",
+    "17:15:45  200=5 ",
+    "17:15:46  200=5 ",
+    "17:15:47  200=5 ",
+    "17:15:48  200=5 ",
+    "17:15:50  200=5 ",
+    "17:15:51  200=5 ",
+    "17:15:52  200=5 ",
+    "17:15:53  200=5 ",
+    "17:15:54  200=5 ",
+    "17:15:55  200=5 ",
+    "17:15:56  200=5 ",
+    "17:15:57  200=5 ",
+    "17:15:58  200=5 ",
+    "17:16:00  200=5 ",
+    "17:16:01  200=5 ",
+    "17:16:02  200=5 ",
+    "17:16:03  200=5 ",
+    "17:16:04  200=5 ",
+    "17:16:05  200=5 ",
+    "17:16:06  200=5 ",
+    "17:16:08  200=5 ",
+    "17:16:09  200=5 ",
+    "17:16:10  200=5 ",
+    "17:16:11  200=5 ",
+    "17:16:12  200=5 ",
+    "17:16:13  200=5 ",
+    "17:16:14  200=5 ",
+    "17:16:15  200=5 ",
+    "17:16:17  200=5 ",
+    "17:16:18  200=5 ",
+    "17:16:19  200=5 ",
+    "17:16:20  200=5 ",
+    "17:16:21  200=5 ",
+    "17:16:22  200=5 ",
+    "17:16:23  200=5 ",
+    "17:16:24  200=5 ",
+    "17:16:25  200=5 ",
+    "17:16:27  200=5 ",
+    "17:16:28  200=5 ",
+    "17:16:29  200=5 ",
+    "17:16:30  200=5 ",
+    "17:16:31  200=5 ",
+    "17:16:32  200=5 ",
+    "17:16:33  200=5 ",
+    "17:16:35  200=5 ",
+    "17:16:36  200=5 ",
+    "17:16:37  200=5 ",
+    "17:16:38  200=5 ",
+    "17:16:39  200=5 ",
+    "17:16:40  200=5 ",
+    "17:16:41  200=5 ",
+    "17:16:42  200=5 ",
+    "17:16:43  200=5 ",
+    "17:16:44  200=5 ",
+    "17:16:46  200=5 ",
+    "17:16:47  200=5 ",
+    "17:16:48  200=5 ",
+    "17:16:49  200=5 ",
+    "17:16:50  200=5 ",
+    "17:16:51  200=5 ",
+    "17:16:52  200=5 ",
+    "17:16:53  200=5 ",
+    "17:16:54  200=5 ",
+    "17:16:56  200=5 ",
+    "17:16:57  200=5 ",
+    "17:16:58  200=5 ",
+    "17:16:59  200=5 ",
+    "17:17:00  200=5 ",
+    "17:17:01  200=5 ",
+    "17:17:02  200=5 ",
+    "17:17:03  200=5 ",
+    "17:17:04  200=5 ",
+    "17:17:06  200=5 ",
+    "17:17:07  200=5 ",
+    "17:17:08  200=5 ",
+    "17:17:09  200=5 ",
+    "17:17:10  200=5 ",
+    "17:17:11  200=5 ",
+    "17:17:12  200=5 ",
+    "17:17:13  200=5 ",
+    "17:17:14  200=5 ",
+    "17:17:16  200=5 ",
+    "17:17:17  200=5 ",
+    "17:17:18  200=5 ",
+    "17:17:19  200=5 ",
+    "17:17:20  200=5 ",
+    "17:17:21  200=5 ",
+    "17:17:22  200=5 ",
+    "17:17:23  200=5 ",
+    "17:17:24  200=5 ",
+    "17:17:26  200=5 ",
+    "17:17:27  200=5 ",
+    "17:17:28  200=5 ",
+    "17:17:29  200=5 ",
+    "17:17:30  200=5 ",
+    "17:17:31  200=5 ",
+    "17:17:32  200=5 ",
+    "17:17:33  200=5 ",
+    "17:17:34  200=5 ",
+    "17:17:36  200=5 ",
+    "17:17:37  200=5 ",
+    "17:17:38  200=5 ",
+    "17:17:39  200=5 ",
+    "17:17:40  200=5 ",
+    "17:17:41  200=5 ",
+    "17:17:42  200=5 ",
+    "17:17:43  200=5 "
+  ],
+  "self_healing_events": [
+    {
+      "ts": "2026-11-14T17:13:40.701001+00:00",
+      "event": "webhook_received",
+      "receiver": "oncall",
+      "status": "firing",
+      "alerts": 1
+    },
+    {
+      "ts": "2026-11-14T17:13:40.701212+00:00",
+      "event": "restart_started",
+      "alertname": "ToggleMasterHigh5xxRate",
+      "deployment": "auth-service",
+      "namespace": "toggle-master"
+    },
+    {
+      "ts": "2026-11-14T17:13:40.729319+00:00",
+      "event": "restart_succeeded",
+      "alertname": "ToggleMasterHigh5xxRate",
+      "deployment": "auth-service",
+      "namespace": "toggle-master",
+      "restarted_at": "2026-11-14T17:13:40Z",
+      "generation": 2
+    },
+    {
+      "ts": "2026-11-14T17:13:41.232036+00:00",
+      "event": "discord_notified"
+    }
+  ],
+  "notification_metrics": {
+    "alertmanager_notifications_total": [
+      {
+        "metric": {
+          "integration": "discord"
+        },
+        "value": [
+          1794676522.957,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "integration": "pagerduty"
+        },
+        "value": [
+          1794676522.957,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "integration": "webhook"
+        },
+        "value": [
+          1794676522.957,
+          "1"
+        ]
+      }
+    ],
+    "alertmanager_notifications_failed_total": [
+      {
+        "metric": {
+          "integration": "discord"
+        },
+        "value": [
+          1794676522.967,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "integration": "pagerduty"
+        },
+        "value": [
+          1794676522.967,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "integration": "webhook"
+        },
+        "value": [
+          1794676522.967,
+          "0"
+        ]
+      }
+    ]
+  },
+  "final_project_alerts": []
+}
