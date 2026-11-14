@@ -1,5 +1,5 @@
 # ServiceMonitor do metrics Service do ingress-nginx (criado pelo Helm com
-# controller.metrics.enabled). Complementa o additionalScrapeConfigs do Prometheus.
+# controller.metrics.enabled). Fonte unica de scrape para evitar series duplicadas.
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
@@ -15,7 +15,8 @@ spec:
   selector:
     matchLabels:
       app.kubernetes.io/name: ingress-nginx
-      app.kubernetes.io/component: metrics
+      app.kubernetes.io/component: controller
+      app.kubernetes.io/instance: ingress-nginx
   endpoints:
     - port: metrics
       interval: 30s
