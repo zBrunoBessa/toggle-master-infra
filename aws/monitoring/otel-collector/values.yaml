@@ -23,11 +23,12 @@ image:
   repository: ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib
 
 presets:
-  # filelog em /var/log/pods + parser de container (CRI). Exclui os logs do próprio
-  # collector para evitar loop.
+  # Coleta stdout de todos os pods, incluindo o Collector; debug removido.
   logsCollection:
     enabled: true
-    includeCollectorLogs: false
+    includeCollectorLogs: true
+    # Salva offsets no disco do no para retomar apos reinicios.
+    storeCheckpoints: true
   # Adiciona k8s.namespace.name, k8s.pod.name, k8s.deployment.name… em todos os
   # pipelines (cria o ClusterRole necessário).
   kubernetesAttributes:
@@ -78,6 +79,9 @@ tolerations:
 
 config:
   receivers:
+    # Arquivos novos incluem logs emitidos antes da descoberta.
+    filelog:
+      start_at: beginning
     # Remove receivers padrão do chart que não usamos.
     jaeger: null
     zipkin: null
@@ -113,8 +117,7 @@ config:
       metrics_flush_interval: 15s
 
   exporters:
-    debug:
-      verbosity: basic
+    debug: null
 
     # Prometheus do kube-prometheus-stack com enableRemoteWriteReceiver: true.
     prometheusremotewrite:
