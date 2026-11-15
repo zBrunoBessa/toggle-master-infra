@@ -94,14 +94,24 @@ terraform -chdir=terraform/platform apply   # cria monitoring/otel-apm-credentia
 - **Python**: nada a rodar. `requirements.txt` e Dockerfile já instalam o distro e as instrumentações.
 - Faça push em cada serviço. O CI gera a imagem e o `gitops-bump` atualiza a tag.
 
-### 5. Desligar o Promtail (depois de validar os logs pelo Collector)
+### 5. Logs sem Promtail
 
-```bash
-git rm aws/argocd/applications/promtail.yaml aws/monitoring/promtail/values.yaml
-git commit -m "chore(monitoring): Promtail substituído pelo OTel Collector (filelog)"
-```
+O Promtail foi removido do branch de implantação do Bruno em 15/11/2026, após comprovar a coleta independente pelo OTel nos dois nós.
 
-Com os dois ligados, os logs ficam duplicados no Loki: o Promtail usa os labels `namespace`/`app` e o Collector usa `k8s_namespace_name`/`service_name`.
+- Antes da remoção (21:33 UTC, janela de 60 minutos): 57 de 59 containers tinham logs pelo OTel; nenhum dependia exclusivamente do Promtail. Os dois containers aws-eks-nodeagent não emitiram stdout na amostra.
+- Depois da remoção (21:38 UTC): 55 de 57 containers tinham logs pelo OTel. A diferença de dois containers corresponde aos agentes Promtail removidos; os dois nodeagents continuaram silenciosos.
+- Com Promtail ausente, 10 requisições retornaram HTTP 200. As consultas pelo datasource do Grafana retornaram registros novos de aplicação (21), ingress (10) e self-healing (1). O teste do webhook usou alerts vazio, sem reiniciar aplicações ou enviar notificações.
+- Os dois Collectors estavam prontos e as 13 Applications restantes estavam Synced/Healthy. As métricas spanmetrics dos cinco serviços estavam presentes após o flush.
+
+O filelog lê arquivos novos desde o início e guarda checkpoints em /var/lib/otelcol no nó. Isso inclui mensagens de inicialização e permite retomar o offset após reinício do Collector. Os logs do próprio Collector também são coletados; o exporter debug foi removido para evitar realimentação.
+
+O exporter prometheusremotewrite desabilita target_info: os atributos de recurso já acompanham cada métrica. Isso evita a disputa dessa série auxiliar entre as pipelines de métricas do SDK e de spanmetrics, observada como rejeições por amostras fora de ordem. Nenhum dashboard deste repositório usa target_info.
+
+As consultas atuais usam os labels OTel k8s_namespace_name, k8s_pod_name e k8s_container_name. Os registros históricos do Promtail continuam sujeitos à retenção do Loki; remover o agente não apaga o PVC.
+
+Limites: esta é uma amostra pontual. Containers silenciosos não comprovam coleta futura. Checkpoints não sobrevivem à substituição do nó; arquivos rotacionados ou eliminados não podem ser recuperados. O backfill inicial teve registros antigos rejeitados pela janela aceita pelo Loki; não se afirma recuperação integral do histórico.
+
+Para rollback no branch deploy/bruno-891376974889, restaure de 54e8ae9 os arquivos aws/argocd/applications/promtail.yaml e aws/monitoring/promtail/values.yaml, faça commit/push e confira a sincronização do Argo CD. Manter os dois coletores simultaneamente duplica a ingestão.
 
 ## Validação
 
