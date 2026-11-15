@@ -121,6 +121,9 @@ config:
 
     # Prometheus do kube-prometheus-stack com enableRemoteWriteReceiver: true.
     prometheusremotewrite:
+      # Atributos ja presentes em cada metrica; evita target_info concorrente.
+      target_info:
+        enabled: false
       endpoint: http://kube-prometheus-stack-prometheus.monitoring.svc:9090/api/v1/write
       resource_to_telemetry_conversion:
         enabled: true
